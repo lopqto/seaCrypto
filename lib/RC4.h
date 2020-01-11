@@ -7,6 +7,9 @@ shout-out to:
 Hamidreza Babaee, first day of January 2020 (Happy new year!)
 */
 
+#ifndef RC4_H
+#define RC4_H
+
 /*
 @secret => encryption key
 @plaintext => the text you wish to encrypt
@@ -15,3 +18,5 @@ Hamidreza Babaee, first day of January 2020 (Happy new year!)
 unsigned char * encrypt(char *secret, char *plaintext);
 
 // TODO: add decyption
+
+#endif

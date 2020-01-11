@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "rc4.h"
+#include "RC4.h"
 
 #define rc4_key_size 256 
 
