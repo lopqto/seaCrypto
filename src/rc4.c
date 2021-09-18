@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "RC4.h"
+#include "rc4.h"
 
 #define rc4_key_size 256 
 
@@ -58,7 +58,7 @@ unsigned char * PRGA(unsigned char *S, char *plaintext) {
     return encryptedtext;
 }
 
-unsigned char * encrypt(char *secret, char *plaintext) {
+unsigned char * rc4_encrypt(char *secret, char *plaintext) {
 
     unsigned char *S = malloc(rc4_key_size);
     S = KSA(secret);

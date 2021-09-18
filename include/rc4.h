@@ -15,7 +15,7 @@ Hamidreza Babaee, first day of January 2020 (Happy new year!)
 @plaintext => the text you wish to encrypt
 #return => unsigned char *encryptedtext = malloc(sizeof(int) * strlen(plaintext));
 */
-unsigned char * encrypt(char *secret, char *plaintext);
+unsigned char * rc4_encrypt(char *secret, char *plaintext);
 
 // TODO: add decyption
 
