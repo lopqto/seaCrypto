@@ -96,8 +96,6 @@ unsigned char *base64_decode(const char *input, size_t inputlen)
 
     output = malloc(decode_size);
 
-    printf("%d\n", decode_size);
-
     if (base64_decode_table == NULL)
         base64_generate_decode_table();
 
