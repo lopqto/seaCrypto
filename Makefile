@@ -7,7 +7,7 @@ TARGET = seaCrypto
 all: $(TARGET)
 
 $(TARGET): ./src/$(TARGET).c
-	$(CC) $(CFLAGS) ./src/$(TARGET).c -o $(TARGET) ./src/base64.c ./src/rc4.c
+	$(CC) $(CFLAGS) ./src/$(TARGET).c -o $(TARGET) ./src/base64.c ./src/rc4.c ./src/xor.c
 
 clean:
 	$(RM) $(TARGET)
