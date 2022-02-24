@@ -4,6 +4,8 @@ CFLAGS  = -g -Iinclude/
 
 TARGET = seaCrypto
 
+.PHONY: $(TARGET)
+
 all: $(TARGET)
 
 $(TARGET): ./src/$(TARGET).c
